@@ -82,7 +82,7 @@ def start():
         global View_btn
         
         try:
-            res=mysql.connector.connect(host='localhost', user='root', password='root1',database='mobilesystemmanagement')
+            res=mysql.connector.connect(host='localhost', user=usernm.get(), password=key.get(),database='mobilesystemmanagement')
             if bool(res)==True:  
         
         #connect buttons widgets
